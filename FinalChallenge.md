@@ -19,7 +19,7 @@ This **markdown document** will explain the steps necessary to install the requi
 # Theme
 
 this is the theme 
-The theme I've selected for the project is my classmates. The reason why I've chosen my peers as my project's theme is because I thought that this would not only be a good way to make the audience familiarize themselves with the people who set up the many fun and interactive features for our show case
+The theme I've selected for the project is my classmates. The reason why I've chosen my peers as my project's theme is because I thought that this could be a good way to make the audience familiarize themselves with the people who set up the many fun and interactive features for our show case.
 
 # Research
 
