@@ -176,6 +176,14 @@ newGame()
 window.mainloop()
 
 ```
+output:
+![](images/gui.PNG)
+*this is the default GUI that appears when the code is run*
+
+when you get a correct answer a text window will pop up saying:
+![](images/correct.PNG)
+While if you fail to get the correct name after 11 guesses the game will end and a different text window will pop up saying:
+![](images/wrong.PNG)
 
 ## **System diagram**
 
@@ -195,7 +203,7 @@ F --> G[Servo Motors]
 ```
 Credit: ywfumav [link](https://github.com/huats-club/EGL314starterkit)
 
-software
+### **software**
 ## **Hardware specifiactions**
 asdf
 
