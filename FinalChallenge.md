@@ -75,14 +75,26 @@ All the libraries used inside the hangman.py script are already inbuilt and thus
 
 ## **Pre-Installation check**
 
-Before downloading any of the libraries before please ensure that you have the latest version of your pi operating system by going into the terminal and typing
+Before downloading any of the libraries before please ensure that you have the latest version of your pi operating system as well as pip3 installed by going into the terminal and typing
 
 >sudo apt-get update
 
 and
 >sudo apt-get upgrade
 
-if there are no additional files added, then proceed as normal however if there are new files added, please restart you pi so that any new packages can be added on.
+next check that your pi has python3 installed by typing in the terminal
+
+>pip3 --version
+
+![](images/pip3.png)
+
+if its not installed, type into the terminal
+
+>sudo apt-get install python3-pip
+
+if there are no additional files added, then proceed as normal however if there are new files added, please restart you pi so that any new packages can be added on after the restart.
+
+
 
 
 
@@ -176,6 +188,7 @@ window.mainloop()
 
 ```
 output:
+
 ![](images/gui.PNG)
 
 *this is the default GUI that appears when the code is run*
@@ -202,11 +215,17 @@ D --> E[Main Server]
 E --> F[ESP32]
 F --> G[Servo Motors]
 ```
-Credit: ywfumav [link](https://github.com/huats-club/EGL314starterkit)
+Credit: ywfumav [link](https://github.com/huats-club/EGL314starterkit) 
 
 
 ## **Hardware specifiactions**
-asdf
+
+### **Hardware Used** ###
+RaspberryPi 4 Model B Version: Raspbian GNU Linux 10 Buster
+
+![](images/Pi4.jpg)
+
+[source](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 
 
 
