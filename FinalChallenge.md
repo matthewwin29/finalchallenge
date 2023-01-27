@@ -8,9 +8,7 @@ This **markdown document** will explain the steps necessary to install the requi
     2. Choice of Feature
     3. Intention of use
 2. ## Research
-    1. Benefits of Interactive Features for educational use
-    2. Benefits of Interactive Features for Coporate use
-    3. Benefits of Gamification of activities
+    1. Benefits of Interactive Features
 3. ## Installation Steps
     1. Libraries Installation
     2. Pre-Installation check
@@ -44,20 +42,21 @@ An example of this would be like for example, when a parent plays red light gree
 
 # Research
 
-## **Benefits of Interactive Features for educational use**
+## **Benefits of Interactive Features**
 the benefit of using an interactive game like activity such as the hangman.py on kids of a young age between 7-12, is that according to this [article](https://trainingindustry.com/articles/content-development/6-benefits-of-interactivity-in-corporate-training/) written by Lance Noland.
 He wrote that and I quote 
 
 ***"Studies show that a higher level of engagement during training activities results in greater retention and recall of knowledge on the part of the learner. And interactivity strategies such as the use of multimedia elements, real-world scenarios, and even basic achievement levels and badges can help to transform the most mundane training modules into engaging, thought-provoking and memorable learning experiences."***
 
+Not only does interactive activities increase the retention of information and attention span in children but it also promotes a higher level of engagement compared to passively viewing an activities as it immerse the kid in the activity which could never be achieved in a traditional non-interactive activity. This has been proven time and time again like for example how kids would rather perform science experiments than just reading about the concept on a text book.
+
+Interactive activities also have positive impacts on young adults with the first example being **Motivation through gamification** as explained by Mr Snehnath Neendoor
+in this [article](https://kitaboo.com/7-benefits-of-interactive-corporate-training/), ***"Gamification motivates people to perform better. Introducing gaming elements"***
+such as who could guess the name with the least amount of tries which creates a sort of leaderboard, creating a competitive enviroment making the experience much more memoriable for them as they are immersed in the activity
 
 
 
-## **Benefits of Interactive Features for Coporate use**
-asdf
 
-## **Benefits of Gamification of activities**
-asdf
 # Installation Steps
 
 ## **Libraries Installation**
@@ -178,10 +177,12 @@ window.mainloop()
 ```
 output:
 ![](images/gui.PNG)
+
 *this is the default GUI that appears when the code is run*
 
-when you get a correct answer a text window will pop up saying:
+When you get a correct answer a text window will pop up saying:
 ![](images/correct.PNG)
+
 While if you fail to get the correct name after 11 guesses the game will end and a different text window will pop up saying:
 ![](images/wrong.PNG)
 
@@ -203,7 +204,7 @@ F --> G[Servo Motors]
 ```
 Credit: ywfumav [link](https://github.com/huats-club/EGL314starterkit)
 
-### **software**
+
 ## **Hardware specifiactions**
 asdf
 
