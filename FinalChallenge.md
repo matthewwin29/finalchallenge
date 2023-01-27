@@ -28,17 +28,33 @@ The theme I've selected for the project is my **Classmates**. The reason why I'v
 
 ## **Choice of Feature**
 
+The reason I picked a game type of feature is because as I would further explain later in the Research segment promotes,
+
+-  greater retention of attention span
+-  greater retention of information
+-  higher levels  of engagement
+- motivation through gamification
+
 
 ## **Intention of use**
 
-My hangman game feature is meant to be played one person at a time, and my intention of this feature is that I would like 
+My hangman game feature is meant to be played one person at a time, with each game lasting about a minute, my other intention of this feature is that I would like the audience to remember the names of my classmates and I through this fun game that promotes greater retention of information, and motivation through gamification of the process.
+
+An example of this would be like for example, when a parent plays red light green light with the child so she/he would intuitively learn to stop at red lights and walk at greens at crossing lights in the future.
 
 # Research
 
+## **Benefits of Interactive Features for educational use**
+asdf
 
 
 
 
+## **Benefits of Interactive Features for Coporate use**
+asdf
+
+## **Benefits of Gamification of activities**
+asdf
 # Installation Steps
 
 ## **Libraries Installation**
@@ -158,8 +174,12 @@ window.mainloop()
 
 ```
 
+## **Connection diagram**
 
+asdf
 
+## **Hardware specifiactions**
+asdf
 
 
 
