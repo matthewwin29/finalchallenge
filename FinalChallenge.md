@@ -162,16 +162,6 @@ imgLabel.grid(row=0, column=0, columnspan=3, padx=10, pady=40)
 
 			
 			
-# x =32; k = 0; outputValue= [0 for i in range(x)]
-# for i in range(x):
-# 	outputValue[i] = [0 for j in range(x)]
-# pixvalue = list(imgLabel.getdata())
-
-# for i in range(x):
-# for j in range(x):
-# outputValue[i][j] = pixvalue[k]
-# k = k + 1
-# print(outputValue)
   
 lblWord = StringVar()
 Label(window, textvariable  =lblWord,font=('consolas 24 bold')).grid(row=0, column=3 ,columnspan=6,padx=10)
@@ -187,6 +177,45 @@ newGame()
 window.mainloop()
 
 ```
+
+
+### **Functions** 
+
+***newGame***
+```python
+def newGame():
+    global the_word_withSpaces
+    global numberOfGuesses
+    numberOfGuesses =0
+    
+    the_word=random.choice(word_list)
+    the_word_withSpaces = " ".join(the_word)
+    lblWord.set(' '.join("_"*len(the_word)))
+```
+When this function is called it resets the numberOfGuesses integer back to 0 from whatever number it was, uses the random fuction to pull a different name from the 'word_list' and set it as 'the_word' which is then set as the next words on the GUI
+
+***guess***
+```python
+def guess(letter):
+	global numberOfGuesses
+	if numberOfGuesses<11:	
+		txt = list(the_word_withSpaces)
+		guessed = list(lblWord.get())
+		if the_word_withSpaces.count(letter)>0:
+			for c in range(len(txt)):
+				if txt[c]==letter:
+					guessed[c]=letter
+				lblWord.set("".join(guessed))
+				if lblWord.get()==the_word_withSpaces:
+					messagebox.showinfo("Hangman","You guessed it!")
+		else:
+			numberOfGuesses += 1
+			imgLabel.config(image=photos[numberOfGuesses])
+			if numberOfGuesses==11:
+					messagebox.showwarning("Hangman","Game Over")
+```
+This function is multiple if else statement with a nested for loop inside which basically displays a letter on the gui every time a letter is guess correctly, else the number of guesses would increase by 1 each time the letters does not match and also displays 1 out of the 12 images of the hangman, which also increase by 1 in numerical order until the 'numberOfGuesses' global int hits 11 in which case the messagebox is triggered.
+
 output:
 
 ![](images/gui.PNG)
