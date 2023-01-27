@@ -3,24 +3,33 @@
 This **markdown document** will explain the steps necessary to install the required libraries to run the feature's python script, a detailed explanation of the funtions of the code, the reasoning for the theme I selected for the project and my intention on how it would interact with the audience during the End Of Semester showcase.
 
 # Syntax
-1. Theme
-    1. a
-    2. b
-    3. c
-2. Research
-    1. a
-    2. b
-    3. c
-3. Installation Steps
-    1. a
-    2. b
-    3. c
+1. ## Theme
+    1. Theme choice
+    2. Choice of Feature
+    3. Intention of use
+2. ## Research
+    1. Benefits of Interactive Features for educational use
+    2. Benefits of Interactive Features for Coporate use
+    3. Benefits of Gamification of activities
+3. ## Installation Steps
+    1. Libraries Installation
+    2. Pre-Installation check
+    3. Code Instructions
+    4. Connection diagram
+    5. Hardware specifiactions
 
 # Theme
 
-The theme I've selected for the project is my classmates. The reason why I've chosen my peers as my project's theme is because I thought that this could be a good way to make the audience familiarize themselves with the people who set up the many fun and interactive features for our show case.
+## **Theme choice**
+The theme I've selected for the project is my **Classmates**. The reason why I've chosen my peers as my project's theme is because I thought that this could be a good way to make the audience familiarize themselves with the people who set up the many fun and interactive features for our show case. In a way, it serves as a reminder near and dear to me about the people I spent my polytechnic life with even when I am no longer in Nanyang Polytechnic anymore
 
-## Intention of use
+![](images/class.jpg)
+[class photo of the first polarized image sent onto the board after the board was assembled]
+
+## **Choice of Feature**
+
+
+## **Intention of use**
 
 My hangman game feature is meant to be played one person at a time, and my intention of this feature is that I would like 
 
@@ -34,9 +43,19 @@ My hangman game feature is meant to be played one person at a time, and my inten
 
 ## **Libraries Installation**
 
-Below are the libraries needed for the code as well as the steps to import them onto a RaspberryPi 4b running on the Respbian GNU Linux 10 Buster OS onto the polarizer board
+All the libraries used inside the hangman.py script are already inbuilt and thus dont need any external downloads. The in-built libraries used are listed below
 
-## Pre-Installation check
+- tkinter
+    * used to make the Graphic User Interface(GUI)
+    * used to display the hangman images on the GUI as well as the letter and other function buttons such as 'new game' which resets the game
+- string
+    * used to save and return variables as string format
+    * specifically The ascii() function in the library returns a readable version of any object
+- random
+    * its a random variable generator used in the code to randomly draw different names from my name list in the hangman game
+
+
+## **Pre-Installation check**
 
 Before downloading any of the libraries before please ensure that you have the latest version of your pi operating system by going into the terminal and typing
 
@@ -55,7 +74,7 @@ First we have the install both the host and client MQTT library to communicate b
 
 Next download the Client publish python file also written by ywfumav from [here](https://github.com/huats-club/mqttstarterkit/blob/main/client_pub_template.py#L7) and rename it to student.pub.py and follow the instructions that are indented in the code.
 
-
+## **Code Instructions**
 
 ### **Hangman.py**
 Next I will show the code for the hangman feature along explanations on how some of the functions work to output.
