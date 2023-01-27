@@ -18,12 +18,15 @@ This **markdown document** will explain the steps necessary to install the requi
 
 # Theme
 
-this is the theme 
 The theme I've selected for the project is my classmates. The reason why I've chosen my peers as my project's theme is because I thought that this could be a good way to make the audience familiarize themselves with the people who set up the many fun and interactive features for our show case.
+
+## Intention of use
+
+My hangman game feature is meant to be played one person at a time, and my intention of this feature is that I would like 
 
 # Research
 
-this is the research
+
 
 
 
@@ -31,7 +34,7 @@ this is the research
 
 ## **Libraries Installation**
 
-Below are the libraies needed for the code as well as the steps to import them onto a RaspberryPi 4b running on the Respbian GNU Linux 10 Buster OS onto the polarizer board
+Below are the libraries needed for the code as well as the steps to import them onto a RaspberryPi 4b running on the Respbian GNU Linux 10 Buster OS onto the polarizer board
 
 ## Pre-Installation check
 
@@ -43,63 +46,17 @@ and
 >sudo apt-get upgrade
 
 if there are no additional files added, then proceed as normal however if there are new files added, please restart you pi so that any new packages can be added on.
-### **Tkinter**
 
-on your Raspberry Pi, click on the terminal icon on the top left. 
-> pip install tk
-
-![](images/tkinter.PNG)
-
-### **MQTT**
-First we have the install both the MQTT broker and Client function. We will first start by installing the broker
-
-> sudo apt install -y mosquito
-
-next for the client type in,
->sudo apt install -y mosquitto-clients
-
-
-next to run the python mqtt script we need to type in
-
->sudo pip3 install paho-mqtt
-
-if pip3 is not already installed type in
-
-> sudo apt install python3-pip
-
-repeat the paho-mqtt download step after pip3 is installed.
-## **Coding steps**
-
-In this step I will showing two python codes that are needed to run the hangman game onto the board
-### **Student_pub.py**
-code:
-```python import time
-import paho.mqtt.client as mqtt
-
-
-def on_publish(client, userdata, mid):
-    print("message published")
-
-def pubpic(output):
-    k = output
-    msg = str(k)
-    pubMsg = client.publish(
-        topic='studentpi/team1', #Please change according to your respective Group  
-        payload=msg.encode('utf-8'),
-        qos=0,
-    )
-
-    pubMsg.wait_for_publish()
-    print(pubMsg.is_published())
 
 
 
-client = mqtt.Client("mqtt_team1") #this name should be unique to every student group
-client.on_publish = on_publish
-client.connect('192.168.254.100',1883) #IP address of Gateway Pi
-# start a new thread
-client.loop_start()
-```
+### **MQTT**
+First we have the install both the host and client MQTT library to communicate both ways between the host pi and the student pi. This link [here](https://github.com/huats-club/mqttstarterkit/blob/main/README.md) brings you to a guide on setting up the mqtt server written by ywfumav. 
+
+Next download the Client publish python file also written by ywfumav from [here](https://github.com/huats-club/mqttstarterkit/blob/main/client_pub_template.py#L7) and rename it to student.pub.py and follow the instructions that are indented in the code.
+
+
+
 ### **Hangman.py**
 Next I will show the code for the hangman feature along explanations on how some of the functions work to output.
 
