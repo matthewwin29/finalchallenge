@@ -114,7 +114,7 @@ from tkinter import *
 from tkinter import messagebox
 from string import ascii_uppercase
 import random
-import student_pub
+
 
 
 window = Tk()
@@ -215,6 +215,8 @@ def guess(letter):
 					messagebox.showwarning("Hangman","Game Over")
 ```
 This function is multiple if else statement with a nested for loop inside which basically displays a letter on the gui every time a letter is guess correctly, else the number of guesses would increase by 1 each time the letters does not match and also displays 1 out of the 12 images of the hangman, which also increase by 1 in numerical order until the 'numberOfGuesses' global int hits 11 in which case the messagebox is triggered.
+
+
 
 output:
 
