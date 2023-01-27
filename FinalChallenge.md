@@ -216,7 +216,15 @@ def guess(letter):
 ```
 This function is multiple if else statement with a nested for loop inside which basically displays a letter on the gui every time a letter is guess correctly, else the number of guesses would increase by 1 each time the letters does not match and also displays 1 out of the 12 images of the hangman, which also increase by 1 in numerical order until the 'numberOfGuesses' global int hits 11 in which case the messagebox is triggered.
 
+**Tkinter Window**
 
+```python
+window = Tk()
+window.title('Hangman-GUESS classmates NAME')
+
+window.mainloop()
+```
+this is to create the main tkinter window and loop it for the game's gui 
 
 output:
 
