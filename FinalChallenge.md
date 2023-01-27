@@ -45,7 +45,10 @@ An example of this would be like for example, when a parent plays red light gree
 # Research
 
 ## **Benefits of Interactive Features for educational use**
-asdf
+the benefit of using an interactive game like activity such as the hangman.py on kids of a young age between 7-12, is that according to this [article](https://trainingindustry.com/articles/content-development/6-benefits-of-interactivity-in-corporate-training/) written by Lance Noland.
+He wrote that and I quote 
+
+***"Studies show that a higher level of engagement during training activities results in greater retention and recall of knowledge on the part of the learner. And interactivity strategies such as the use of multimedia elements, real-world scenarios, and even basic achievement levels and badges can help to transform the most mundane training modules into engaging, thought-provoking and memorable learning experiences."***
 
 
 
@@ -174,10 +177,25 @@ window.mainloop()
 
 ```
 
-## **Connection diagram**
+## **System diagram**
 
-asdf
+### **Hardware**
 
+```mermaid
+graph TD
+A[Laptop] --> B[VNC Viewer]
+B --> A
+A --> C
+B --> D
+A --> C[MQTT]
+C --> D[Raspberry Pi]
+D --> E[Main Server]
+E --> F[ESP32]
+F --> G[Servo Motors]
+```
+Credit: ywfumav [link](https://github.com/huats-club/EGL314starterkit)
+
+software
 ## **Hardware specifiactions**
 asdf
 
